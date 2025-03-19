@@ -8,8 +8,9 @@
 1. Download this code as zip or as and open visual studio code with terminal and run command
 
 ```
-npm install 
-```.
+npm install
+
+```
 
 2. Then create **`.env`** file into your app/project folder not in **`src`** which you created, open the **`.env`** file and type the line 
 
