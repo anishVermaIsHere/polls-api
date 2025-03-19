@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const secretKey=process.env.JWT_PRV_KEY;
+const secretKey=process.env.JWT_KEY;
 let tokenObject = {
     tokenEncode(email,id) {
     const dt=new Date();

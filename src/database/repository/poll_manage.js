@@ -9,7 +9,7 @@ module.exports = {
         return PollModel.create(pollObject);
     },
     get() {
-        return PollModel.find();
+        return PollModel.find().sort({ createdAt: -1 });
     },
     async edit(pollid, data) {
         return await PollModel.findByIdAndUpdate({ _id: pollid }, data);
@@ -86,9 +86,9 @@ module.exports = {
         }
         
     },
-    async findUser(userid, res) {
+    async findUserAndUpdatePoll(userid, res) {
         try {
-            const user = await UserModel.findById(userid).populate('polls');
+            const user = await UserModel.findById(userid).populate({ path: 'polls', options: { sort: { created_date: -1 }}});
             return res.status(SUCCESS).json({ polls: user.polls });
         }
         catch (err) {
