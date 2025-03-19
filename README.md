@@ -27,6 +27,6 @@ and save it.
 ```
 npm start
 
-```.
+```
 
 5. Now your server will start successfully.
