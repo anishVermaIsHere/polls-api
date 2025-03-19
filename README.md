@@ -19,7 +19,8 @@ SERVER_PORT=<YOUR PORT NO>
 DB_CONNECT_URL=<YOUR MongoDB Connection URL>
 JWT_PRV_KEY=<YOUR SECRET KEY FOR JWT>
 
-``` and save it.
+```
+and save it.
 
 4. After the installation of all dependencies and environment setup. Now, you have to run last command 
 
