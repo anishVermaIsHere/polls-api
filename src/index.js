@@ -29,17 +29,17 @@ app.use('/', userRouter);
 app.use('/', pollRouter);
 app.set('view engine', 'ejs');
 
-const server = app.listen(process.env.SERVER_PORT, (error) => {
+const server = app.listen(process.env.PORT, (error) => {
     try {
         if (error) {
-            console.log('SERVER crash', error);
+            console.log('/// SERVER CRASH ///', error);
         }
         else {
             console.log('SERVER started...', server.address().port);
         }
     }
     catch(err){
-        console.log('/// SERVER CRASH /// ', err);
+        console.log('/// SERVER CRASH ///', err);
     }
 })
 

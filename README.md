@@ -1,21 +1,30 @@
-# CRUD - Poll app REST API in Express JS
 
-**Follow these steps to use**
+# Touchpoll Backend
+## Poll REST API server built in Node and Express JS
 
-1. Download this code as zip or run the command in git bash
-```bash
-git clone https://github.com/anishVermaIsHere/polls-api.git
+
+**To use api follow these steps**
+
+1. Download this code as zip or as and open visual studio code with terminal and run command 
 ```
-and open visual studio code with this directory and run the command **`npm install`** in terminal.
+npm install 
 
-4. Then create **`.env`** file into your app/project folder not in **`src`** which you created, open the **`.env`** file then copy this code and paste 
-```bash
-SERVER_PORT=<PORT_NO.>
-DB_CONNECT_URL=<DB_URI>
-JWT_PRV_KEY=7dsf4huotljet
+```.
+
+2. Then create **`.env`** file into your app/project folder not in **`src`** which you created, open the **`.env`** file and type the line 
+
 ```
-and save it.
+SERVER_PORT=<YOUR PORT NO>
+DB_CONNECT_URL=<YOUR MongoDB Connection URL>
+JWT_PRV_KEY=<YOUR SECRET KEY FOR JWT>
 
-4. After the installation of all dependencies and environment setup. Now, you have to run last command **`npm start`**.
+``` and save it.
+
+4. After the installation of all dependencies and environment setup. Now, you have to run last command 
+
+```
+npm start
+
+```.
 
 5. Now your server will start successfully.

@@ -1,7 +1,9 @@
 {
-  "name": "backend",
+  "name": "touchpoll-api",
   "version": "1.0.0",
   "description": "",
+  "author":"Anish Verma",
+  "githublink":"github.com/anishvermaishere",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
